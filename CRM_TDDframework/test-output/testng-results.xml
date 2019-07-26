@@ -1,98 +1,168 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" ignored="0" total="2" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="44525" started-at="2019-07-22T09:06:11Z" finished-at="2019-07-22T09:06:56Z">
+  <suite name="Default suite" duration-ms="110111" started-at="2019-07-23T08:09:17Z" finished-at="2019-07-23T08:11:07Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="44525" started-at="2019-07-22T09:06:11Z" finished-at="2019-07-22T09:06:56Z">
+    <test name="Default test" duration-ms="110111" started-at="2019-07-23T08:09:17Z" finished-at="2019-07-23T08:11:07Z">
       <class name="com.crm.qa.testcases.ContactsPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@39c0f4a]" name="setUp" is-config="true" duration-ms="43647" started-at="2019-07-22T09:06:11Z" finished-at="2019-07-22T09:06:55Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@39c0f4a]" name="setUp" is-config="true" duration-ms="22030" started-at="2019-07-23T08:09:17Z" finished-at="2019-07-23T08:09:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="contactsLabelTest()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@39c0f4a]" name="contactsLabelTest" duration-ms="101" started-at="2019-07-22T09:06:55Z" finished-at="2019-07-22T09:06:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- contactsLabelTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@39c0f4a]" name="tearDown" is-config="true" duration-ms="695" started-at="2019-07-22T09:06:55Z" finished-at="2019-07-22T09:06:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="validateCreateNewContact(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@39c0f4a]" name="validateCreateNewContact" duration-ms="0" started-at="2019-07-22T09:06:56Z" data-provider="getCRMTestData" finished-at="2019-07-22T09:06:56Z">
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[java.lang.NoClassDefFoundError: org/apache/poi/ss/usermodel/Date1904Support]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/poi/ss/usermodel/Date1904Support
-at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
-at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:131)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:706)
-at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
-at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.NoClassDefFoundError: org/apache/poi/ss/usermodel/Date1904Support
-at java.lang.ClassLoader.defineClass1(Native Method)
-at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
-at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
-at java.net.URLClassLoader.defineClass(URLClassLoader.java:468)
-at java.net.URLClassLoader.access$100(URLClassLoader.java:74)
-at java.net.URLClassLoader$1.run(URLClassLoader.java:369)
-at java.net.URLClassLoader$1.run(URLClassLoader.java:363)
-at java.security.AccessController.doPrivileged(Native Method)
-at java.net.URLClassLoader.findClass(URLClassLoader.java:362)
-at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
-at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
-at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
-at java.lang.Class.getDeclaredMethods0(Native Method)
-at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
-at java.lang.Class.privateGetMethodRecursive(Class.java:3048)
-at java.lang.Class.getMethod0(Class.java:3018)
-at java.lang.Class.getMethod(Class.java:1784)
-at org.apache.poi.ss.usermodel.WorkbookFactory.createWorkbook(WorkbookFactory.java:338)
-at org.apache.poi.ss.usermodel.WorkbookFactory.createXSSFWorkbook(WorkbookFactory.java:314)
-at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:232)
-at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:198)
-at com.crm.qa.util.TestUtil.getTestData(TestUtil.java:40)
-at com.crm.qa.testcases.ContactsPageTest.getCRMTestData(ContactsPageTest.java:72)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:74)
-at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)
-... 22 more
-Caused by: java.lang.ClassNotFoundException: org.apache.poi.ss.usermodel.Date1904Support
-at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
-at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
-at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
-at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
-... 52 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
+        <test-method status="PASS" signature="validateCreateNewContact(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@39c0f4a]" name="validateCreateNewContact" duration-ms="3982" started-at="2019-07-23T08:09:39Z" data-provider="getCRMTestData" finished-at="2019-07-23T08:09:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Arpitha]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Murty]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[arpitha@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Rajajinagar]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[BCOM]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateCreateNewContact -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@39c0f4a]" name="tearDown" is-config="true" duration-ms="691" started-at="2019-07-23T08:09:43Z" finished-at="2019-07-23T08:09:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@39c0f4a]" name="setUp" is-config="true" duration-ms="26845" started-at="2019-07-23T08:09:44Z" finished-at="2019-07-23T08:10:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateCreateNewContact(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@39c0f4a]" name="validateCreateNewContact" duration-ms="3683" started-at="2019-07-23T08:10:11Z" data-provider="getCRMTestData" finished-at="2019-07-23T08:10:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Alok]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ranjan]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[aranjan@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Ratanganj]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Science]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCreateNewContact -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@39c0f4a]" name="tearDown" is-config="true" duration-ms="655" started-at="2019-07-23T08:10:15Z" finished-at="2019-07-23T08:10:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@39c0f4a]" name="setUp" is-config="true" duration-ms="21618" started-at="2019-07-23T08:10:15Z" finished-at="2019-07-23T08:10:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateCreateNewContact(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@39c0f4a]" name="validateCreateNewContact" duration-ms="3736" started-at="2019-07-23T08:10:37Z" data-provider="getCRMTestData" finished-at="2019-07-23T08:10:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Nisha]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Bharti]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[nbhatri@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Satghara]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Biology]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCreateNewContact -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@39c0f4a]" name="tearDown" is-config="true" duration-ms="698" started-at="2019-07-23T08:10:41Z" finished-at="2019-07-23T08:10:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@39c0f4a]" name="setUp" is-config="true" duration-ms="21050" started-at="2019-07-23T08:10:41Z" finished-at="2019-07-23T08:11:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateCreateNewContact(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@39c0f4a]" name="validateCreateNewContact" duration-ms="3702" started-at="2019-07-23T08:11:02Z" data-provider="getCRMTestData" finished-at="2019-07-23T08:11:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sanket]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Anand]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[sanand@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Bhagalpur]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Commerce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCreateNewContact -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@39c0f4a]" name="tearDown" is-config="true" duration-ms="688" started-at="2019-07-23T08:11:06Z" finished-at="2019-07-23T08:11:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- com.crm.qa.testcases.ContactsPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
