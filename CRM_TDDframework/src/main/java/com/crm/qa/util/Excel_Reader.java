@@ -124,7 +124,7 @@ public String getCellData(String sheetName, int colNum, int rowNum) {
 		return 0;
 	}
 	public static void main(String[] args) {
-		String path="C:\\Users\\MITHUN\\git\\CRMtest\\CRM_TDDframework\\src\\main\\java\\com\\crm\\qa\\testdata\\TestData.xlsx";
+		String path=System.getProperty("user.dir")+"\\src\\main\\java\\com\\crm\\qa\\testdata\\TestData.xlsx";
 		Excel_Reader obj=new Excel_Reader(path);
 		System.out.println(obj.getCellData("Login", "Lastname", 2));
 		System.out.println(obj.getRowCount("Login"));

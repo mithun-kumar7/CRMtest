@@ -22,8 +22,7 @@ public class TestUtil extends TestBase{
 	public static long PAGE_LOAD_TIMEOUT = 40;
 	public static long IMPLICIT_WAIT = 30;
 	
-	public static String TESTDATA_SHEET_PATH = "E:\\Java_code\\CRM_TDDframework\\src\\"
-			+ "main\\java\\com\\crm\\qa\\testdata\\contactsTestData.xlsx";
+	public static String TESTDATA_SHEET_PATH = System.getProperty("usr.dir")+"\\src\\main\\java\\com\\crm\\qa\\testdata\\contactsTestData.xlsx";
 	
 	static Workbook book;
 	static Sheet sheet;
